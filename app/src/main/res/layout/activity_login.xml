@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/doge"/>
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디를 입력하세요."
+        android:textColorHint="#3F51B5"/>
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="패스워드를 입력하세요."
+        android:textColorHint="#673AB7"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:background="#D155E8"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="로그인"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_join"
+        android:background="#D68181"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="회원가입"/>
+
+</LinearLayout>

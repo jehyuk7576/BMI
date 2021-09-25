@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="비만도 계산기"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="당신의 키(cm)"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/cm"
+        android:textColor="@color/black"
+        android:textColorHint="#64DA6A"
+        android:hint="키를 입력해주세요"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신의 몸무게(kg)"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/kg"
+        android:textColor="@color/black"
+        android:textColorHint="#64DA6A"
+        android:hint="몸무를 입력해주세요"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계산하기"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_result_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="BMI : 22"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_result_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="결과는 : 정상입니다"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>
